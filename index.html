@@ -78,7 +78,7 @@
                     </li> -->
                     <li>
                         <a class="page-scroll" href="#team">團隊介紹</a>
-                    </li>                   
+                    </li>
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
@@ -87,16 +87,22 @@
     </nav>
 
     <!-- Header -->
-    <header>
+    <header style="position:relative">
         <div class="container">
             <div class="intro-text">
 <!--                 <div class="intro-lead-in">Welcome To Our Studio!</div> -->
                 <div class="intro-heading">2017台灣大學日本職涯線上座談</div>
-                <div class="intro-lead-in">--當海外工作成為一種趨勢--</div>
+                <div class="intro-lead-in">
+                  <span id="heading-subtitle">2017年3月5日</span>
+                  <a href="https://www.youtube.com/channel/UCM0SQUVSu-bnspF1CZ4qZbw" target="_blank"><img id="facebook-logo" style="vertical-align: text-top;max-height:40px" class="img-fluid" alt="Responsive image" src='img/facebook-logo.png' /></a>
+                  <a href="https://www.facebook.com/worklifeinjapan/?fref=ts" target="_blank"><img id="youtube-logo" style="vertical-align: top;max-height:40px" class="img-fluid" alt="Responsive image" src='img/youtube-logo2.png' /></a>
+                  <span>直播</span>
+                </div>
                 <button type="submit" class="btn btn-xl">馬上報名</button>
 <!--                 <a href="#services" class="page-scroll btn btn-xl">Tell Me More</a> -->
             </div>
         </div>
+        <a target="_blank" href="https://www.flickr.com/photos/dodyeephoto/" style="position:absolute;right:0px;bottom:0px;">Photo: Jing Liao</a>
     </header>
 
     <!-- Services Section -->
@@ -363,7 +369,7 @@
             </div>
         </div>
     </section>
-    
+
     <!-- Clients Aside -->
     <section>
         <div class="container">
@@ -609,6 +615,12 @@
 
     <!-- jQuery -->
     <script src="vendor/jquery/jquery.min.js"></script>
+    <script>
+      $(document).ready(function() {
+        $("#facebook-logo").add("#youtube-logo").add("#live-logo").height($("#heading-subtitle").height());
+
+      });
+    </script>
 
     <!-- Bootstrap Core JavaScript -->
     <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
