@@ -1120,7 +1120,6 @@ img {
 .thumbnail a > img,
 .carousel-inner > .item > img,
 .carousel-inner > .item > a > img {
-  display: block;
   max-width: 100%;
   height: auto;
 }
@@ -4274,7 +4273,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .navbar-brand {
   float: left;
   height: 50px;
-  padding: 15px 15px;
+  padding: 5px 5px;
   font-size: 18px;
   line-height: 20px;
 }
